@@ -2,34 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Gaussian
+namespace Chaos
 {
-
-    public static readonly Vector3[] gaussion =
+    public static class Gaussian
     {
+
+        public static readonly Vector3[] gaussion =
+        {
             new Vector3(1.0f/16.0f, 1.0f/8.0f, 1.0f/16.0f),
             new Vector3(1.0f/ 8.0f, 1.0f/4.0f, 1.0f/ 8.0f),
             new Vector3(1.0f/16.0f, 1.0f/8.0f, 1.0f/16.0f),
-    };
+        };
 
-    public static readonly float[,] gaussion3 =
-    {
+        public static readonly float[,] gaussion3 =
+        {
             {1.0f/16.0f, 1.0f/8.0f, 1.0f/16.0f,},
             {1.0f/ 8.0f, 1.0f/4.0f, 1.0f/ 8.0f,},
             {1.0f/16.0f, 1.0f/8.0f, 1.0f/16.0f,},
-    };
+        };
 
-    public static readonly float[,] gaussion5 =
-    {
+        public static readonly float[,] gaussion5 =
+        {
             { 1.0f / 273.0f,  4.0f / 273.0f,  7.0f / 273.0f,  4.0f / 273.0f, 1.0f / 273.0f,},
             { 4.0f / 273.0f, 16.0f / 273.0f, 26.0f / 273.0f, 16.0f / 273.0f, 4.0f / 273.0f,},
             { 8.0f / 273.0f, 26.0f / 273.0f, 41.0f / 273.0f, 26.0f / 273.0f, 7.0f / 273.0f,},
             { 4.0f / 273.0f, 16.0f / 273.0f, 26.0f / 273.0f, 16.0f / 273.0f, 4.0f / 273.0f,},
             { 1.0f / 273.0f,  4.0f / 273.0f,  7.0f / 273.0f,  4.0f / 273.0f, 1.0f / 273.0f,},
-    };
+        };
 
-    public static readonly float[,] gaussion7 =
-    {
+        public static readonly float[,] gaussion7 =
+        {
             {0.000036f, 0.000363f, 0.001446f, 0.002291f, 0.001446f, 0.000363f, 0.000036f},
             {0.000363f, 0.003676f, 0.014662f, 0.023226f, 0.014662f, 0.003676f, 0.000363f},
             {0.001446f, 0.014662f, 0.058488f, 0.092651f, 0.058488f, 0.014662f, 0.001446f},
@@ -37,10 +39,10 @@ public static class Gaussian
             {0.001446f, 0.014662f, 0.058488f, 0.092651f, 0.058488f, 0.014662f, 0.001446f},
             {0.000363f, 0.003676f, 0.014662f, 0.023226f, 0.014662f, 0.003676f, 0.000363f},
             {0.000036f, 0.000363f, 0.001446f, 0.002291f, 0.001446f, 0.000363f, 0.000036f},
-    };
+        };
 
-    public static readonly float[,] gaussion9 =
-    {
+        public static readonly float[,] gaussion9 =
+        {
             {0,         0.000001f, 0.000014f, 0.000055f, 0.000088f, 0.000055f, 0.000014f, 0.000001f, 0},
             {0.000001f, 0.000036f, 0.000362f, 0.001445f, 0.002289f, 0.001445f, 0.000362f, 0.000036f, 0.000001f},
             {0.000014f, 0.000362f, 0.003672f, 0.014648f, 0.023205f, 0.014648f, 0.003672f, 0.000362f, 0.000014f},
@@ -50,5 +52,6 @@ public static class Gaussian
             {0.000014f, 0.000362f, 0.003672f, 0.014648f, 0.023205f, 0.014648f, 0.003672f, 0.000362f, 0.000014f},
             {0.000001f, 0.000036f, 0.000362f, 0.001445f, 0.002289f, 0.001445f, 0.000362f, 0.000036f, 0.000001f},
             {0,         0.000001f, 0.000014f, 0.000055f, 0.000088f, 0.000055f, 0.000014f, 0.000001f, 0},
-    };
+        };
+    }
 }
